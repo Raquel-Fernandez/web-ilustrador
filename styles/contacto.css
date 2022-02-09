@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/futura_normal.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Raleway:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*HEADER*/
+header {
+  position: sticky;
+  top: 0%;
+  background-color: black;
+}
+
+.title {
+  margin-top: 2%;
+  padding-top: 1%;
+  font-family: "Amatic SC";
+  font-size: 64px;
+  color: white;
+  text-align: center;
+}
+
+.title a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.title a:hover {
+  color:#ff9900;
+}
+
+.navigation {
+  margin-top: 0.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.navigation a {
+  font-family: "futura";
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation a:hover {
+  color: #ff9900;
+}
+
+.navigation a.active {
+  color: #ff9900;
+}
+
+hr {
+  border: 1px solid white;
+  margin: 0.5% 2.5%;
+  margin-bottom: 4.5%;
+}
+
+/*CONTACTO*/
+div.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  align-items: center;
+  font-family: "Amatic SC";
+  margin: 0px 2.5%;
+  margin-bottom: 5%;
+  font-size: 20px;
+  color: white;
+}
+
+
+/*div E-MAIL*/
+.contacto .contactoEmail {
+  font-family: "Amatic SC";
+  
+  border-radius: 6px;
+  font-size: 30px;
+  width: 50%;
+}
+.contacto .contactoEmail p {
+  text-align: center;
+  font-size: 32px;
+  
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label{
+  display: inline-block;
+}
+label span{
+  color:red;
+}
+input[type="text"],
+[type="email"],
+textarea {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 50%;
+  border-radius: 6px;
+  margin: 3% 0px;
+  font-size: 14px;
+  font-family: Helvetica;
+}
+textarea {
+  resize: none;
+  width: 400px;
+  height: 100px;
+  margin-bottom: 5%;
+}
+input[type="submit"] {
+  background-color: #ff9900;
+  color: black;
+  font-family: "Amatic SC";
+  font-size: 28px;
+  padding: 5px 35px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  transition: transform 0.2s;
+}
+input[type="submit"]:hover {
+  background-color: #fdbc5a;
+  color: black;
+  transform: scale(1.1);
+}
+
+
+
+/*FOOTER*/
+footer {
+  background-color: #ff9900;
+  height: 80px;
+  line-height: 80px;
+  margin-top: auto;
+  display: flex;
+}
+
+.footerContainer {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: flex;
+  width: 100%;
+}
+
+.socialMediaFooter {
+  display: flex;
+  justify-content: right;
+  width: 50%;
+}
+
+.socialMediaFooter img {
+  margin-left: 80px;
+  vertical-align: middle;
+  width: 33px;
+  height: 33px;
+}
+
+footer #copyright {
+  justify-content: flex-end;
+  text-align: end;
+  font-family: "futura";
+  font-size: 18px;
+  width: 50%;
+}

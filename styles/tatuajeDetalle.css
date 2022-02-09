@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Raleway:wght@100&display=swap");
+
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/futura_normal.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+  font-family: "futura";
+  min-height:100vh;
+  display:flex; 
+  flex-direction:column; 
+  justify-content:space-between;
+}
+
+
+/*HEADER*/
+
+header {
+  position: sticky;
+  top: 0%;
+  background-color: black;
+}
+
+.title {
+  margin-top: 2%;
+  padding-top: 1%;
+  font-family: "Amatic SC";
+  font-size: 64px;
+  color: white;
+  text-align: center;
+}
+
+.title a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.title a:hover {
+  color:#ff9900;
+}
+
+.navigation {
+  margin-top: 0.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.navigation a {
+  font-family: "futura";
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation a:hover {
+  color: #ff9900;
+}
+
+.navigation a.active {
+  color: #ff9900;
+}
+
+hr {
+  border: 1px solid white;
+  margin: 0.5% 2.5%;
+  margin-bottom: 4.5%;
+}
+
+
+/*TATUAJE DETALLE*/
+
+#tatuajeDetalle {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: flex;
+  margin-bottom: 5%;
+}
+#tatuajeDetalle span {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 6%;
+}
+#tatuajeDetalle img {
+  width: 400px;
+  height: auto;
+}
+#tatuajeDetalle .description {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 6%;
+}
+#tatuajeDetalle p {
+  font-size: 28px;
+  font-family: "Amatic SC";
+  margin-left: 30px;
+  color: white;
+  text-align: justify;
+}
+#tatuajeDetalle p.info {
+  font-size: 20px;
+}
+
+
+/*FOOTER*/
+
+footer {
+  background-color: #ff9900;
+  height: 80px;
+  line-height: 80px;
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footerContainer {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: flex;
+  width: 100%;
+}
+
+.socialMediaFooter {
+  display: flex;
+  justify-content: right;
+  width: 50%;
+}
+
+.socialMediaFooter img {
+  margin-left: 80px;
+  vertical-align: middle;
+  width: 33px;
+  height: 33px;
+}
+
+footer #copyright {
+  justify-content: flex-end;
+  text-align: end;
+  font-family: "futura";
+  font-size: 18px;
+  width: 50%;
+  vertical-align: middle;
+}
